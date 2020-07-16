@@ -1,5 +1,6 @@
 package com.wxf.sc.controller;
 
+import com.wxf.sc.entity.User;
 import com.wxf.sc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -64,5 +65,16 @@ public class UserConsumerCtl {
         String name =  restTemplate.getForObject("http://scuserservice/getuser?uid="+id,String.class);
         System.out.println("name is " + name);
         return  name;
+    }
+
+    /**
+     * 使用feign 方式
+     * @return
+     */
+    @RequestMapping("getUserlist")
+    public List<User> getUserlist(){
+        List<User> userlist = userService.getUserList();
+        return  userlist;
+
     }
 }
