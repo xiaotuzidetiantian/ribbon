@@ -9,6 +9,9 @@
         <module>sc-user-consumer</module>
         <module>sc-user-provider2</module>
         <module>sc-user-entity</module>
+        <module>sc-consumer-hytrix</module>
+        <module>sc-hytrix-board</module>
+        <module>sc-zuul-app</module>
     </modules>
 
     <parent>

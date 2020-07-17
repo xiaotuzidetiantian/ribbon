@@ -40,5 +40,9 @@ public class UserController {
         return userList;
     }
 
+    @RequestMapping("a")
+    public String geta() {
+        return "this is a";
+    }
 
 }
