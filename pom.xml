@@ -12,6 +12,10 @@
         <module>sc-consumer-hytrix</module>
         <module>sc-hytrix-board</module>
         <module>sc-zuul-app</module>
+        <module>sc-config-serverApp</module>
+        <module>sc-config-clientApp</module>
+        <module>sc-config-bus-serverApp</module>
+        <module>sc-config-bus-clientApp</module>
     </modules>
 
     <parent>
